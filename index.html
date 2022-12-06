@@ -10,13 +10,26 @@
     <script src="js/main.js" defer></script>
   </head>
   <body>
-    <header class="header">
-      <h1>ETCH A SKETCH</h1>
-    </header>
     <main class="main">
       <div class="setting">
-        <input type="range" min="10" max="64" class="input-range" value="16" />
-        <button class="clean-up">Clean Up</button>
+        <h1 class="header">ETCH A SKETCH</h1>
+        <div class="btn">
+          <button class="normal btn__button">Normal</button>
+          <button class="rain-bow btn__button">Rainbow</button>
+          <button class="erase btn__button">Erase</button>
+          <button class="clean-up btn__button">Clean Up</button>
+        </div>
+        <div class="size">
+          <label for="input-range"></label>
+          <input
+            name="input-range"
+            type="range"
+            min="10"
+            max="64"
+            class="input-range"
+            value="16"
+          />
+        </div>
       </div>
       <div class="container"></div>
     </main>
